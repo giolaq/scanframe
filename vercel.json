@@ -3,5 +3,8 @@
   "buildCommand": "npm run build:vercel",
   "outputDirectory": "vercel-dist",
   "framework": "vite",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
